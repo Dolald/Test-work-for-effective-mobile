@@ -16,8 +16,8 @@ CREATE TABLE users_tasks
 (
  id serial primary key,
  user_id int references users(id) on delete cascade not null,
- start_at timestamp default current_timestamp, 
- end_at timestamp default current_timestamp
+ start_at timestamp not null default current_timestamp, 
+ end_at timestamp
 );
 
 -- +goose StatementEnd
