@@ -1,4 +1,4 @@
-
-app {
-    ContextWaiting = 4
+{
+    "ReadTimeout": 10,
+    "WriteTimeout": 10
 }
